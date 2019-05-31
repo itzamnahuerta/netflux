@@ -1,0 +1,4 @@
+  [1m[35m (547.6ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (401.9ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
