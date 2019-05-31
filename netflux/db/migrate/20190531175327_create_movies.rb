@@ -8,6 +8,8 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.string :plot
       t.string :image
       t.integer :duration
+      t.string :reference
+      t.string :subscriptions
 
       t.timestamps
     end

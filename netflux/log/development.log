@@ -1,71 +1,335 @@
-  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
-  ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
   ↳ bin/rails:9
-  [1m[35m (202.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_development"[0m
-  ↳ bin/rails:9
-  [1m[35m (209.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_test"[0m
-  ↳ bin/rails:9
-  [1m[35m (546.4ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (397.6ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
   [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
-  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
-  [1m[35m (24.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (540.3ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
-  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (388.3ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
   ↳ bin/rails:9
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   ↳ bin/rails:9
-Migrating to CreateUsers (20190531155402)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190531175222)
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ bin/rails:9
-  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20190531155402_create_users.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531155402"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175222_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175222"]]
   ↳ bin/rails:9
-  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ bin/rails:9
-Migrating to CreateSubscriptions (20190531155414)
+Migrating to CreateSubscriptions (20190531175258)
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ bin/rails:9
-  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" bigserial primary key, "type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20190531155414_create_subscriptions.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531155414"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" bigserial primary key, "type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175258_create_subscriptions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175258"]]
   ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   ↳ bin/rails:9
-Migrating to CreateMovies (20190531155424)
+Migrating to CreateMovies (20190531175327)
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
   ↳ bin/rails:9
-  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "title" character varying, "year" integer, "genre" character varying, "director" character varying, "plot" character varying, "image" character varying, "duration" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20190531155424_create_movies.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531155424"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "title" character varying, "year" integer, "genre" character varying, "director" character varying, "plot" character varying, "image" character varying, "duration" integer, "reference" character varying, "subscriptions" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175327_create_movies.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175327"]]
   ↳ bin/rails:9
-  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-31 17:53:35.257733"], ["updated_at", "2019-05-31 17:53:35.257733"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to SetAssociation (20190531175420)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[35mALTER TABLE "movies" ADD "subscription_id" integer[0m
+  ↳ db/migrate/20190531175420_set_association.rb:3
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_movies_on_subscription_id" ON "movies"  ("subscription_id")[0m
+  ↳ db/migrate/20190531175420_set_association.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175420"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to FixColumn (20190531175627)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "subscriptions" RENAME COLUMN "type" TO "tier"[0m
+  ↳ db/migrate/20190531175627_fix_column.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175627"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ bin/rails:9
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-31 15:55:25.127563"], ["updated_at", "2019-05-31 15:55:25.127563"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (1.4ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "free"], ["created_at", "2019-05-31 17:57:08.728111"], ["updated_at", "2019-05-31 17:57:08.728111"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "silver"], ["created_at", "2019-05-31 17:57:08.731606"], ["updated_at", "2019-05-31 17:57:08.731606"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.3ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "gold"], ["created_at", "2019-05-31 17:57:08.733240"], ["updated_at", "2019-05-31 17:57:08.733240"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Load (0.5ms)[0m  [1m[34mSELECT  "subscriptions".* FROM "subscriptions" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to UserMovie (20190531175844)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175844"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (175.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (140.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (505.1ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (388.0ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190531175222)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175222_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175222"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubscriptions (20190531175258)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" bigserial primary key, "type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175258_create_subscriptions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175258"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMovies (20190531175327)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "title" character varying, "year" integer, "genre" character varying, "director" character varying, "plot" character varying, "image" character varying, "duration" integer, "reference" character varying, "subscriptions" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175327_create_movies.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175327"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to SetAssociation (20190531175420)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "movies" ADD "subscription_id" integer[0m
+  ↳ db/migrate/20190531175420_set_association.rb:3
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_movies_on_subscription_id" ON "movies"  ("subscription_id")[0m
+  ↳ db/migrate/20190531175420_set_association.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175420"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to FixColumn (20190531175627)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "subscriptions" RENAME COLUMN "type" TO "tier"[0m
+  ↳ db/migrate/20190531175627_fix_column.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175627"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to UserMovie (20190531175844)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175844"]]
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-31 18:04:47.898598"], ["updated_at", "2019-05-31 18:04:47.898598"]]
   ↳ bin/rails:9
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   ↳ bin/rails:9
@@ -75,118 +339,61 @@ Migrating to CreateMovies (20190531155424)
   ↳ bin/rails:9
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
-  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.9ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", ""], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 15:58:42.316122"], ["updated_at", "2019-05-31 15:58:42.316122"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 15:58:42.319694"], ["updated_at", "2019-05-31 15:58:42.319694"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 15:58:42.321510"], ["updated_at", "2019-05-31 15:58:42.321510"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 15:58:42.323323"], ["updated_at", "2019-05-31 15:58:42.323323"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", ""], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 15:58:42.325081"], ["updated_at", "2019-05-31 15:58:42.325081"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 16:00:16.994316"], ["updated_at", "2019-05-31 16:00:16.994316"]]
+  [1m[36mMovie Create (2.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 18:06:00.798815"], ["updated_at", "2019-05-31 18:06:00.798815"]]
   ↳ db/seeds.rb:8
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 16:00:16.997795"], ["updated_at", "2019-05-31 16:00:16.997795"]]
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 18:06:00.803472"], ["updated_at", "2019-05-31 18:06:00.803472"]]
   ↳ db/seeds.rb:8
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 16:00:17.000090"], ["updated_at", "2019-05-31 16:00:17.000090"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 16:00:17.002111"], ["updated_at", "2019-05-31 16:00:17.002111"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 18:06:00.805186"], ["updated_at", "2019-05-31 18:06:00.805186"]]
   ↳ db/seeds.rb:8
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 16:00:17.003600"], ["updated_at", "2019-05-31 16:00:17.003600"]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 18:06:00.806489"], ["updated_at", "2019-05-31 18:06:00.806489"]]
   ↳ db/seeds.rb:8
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 18:06:00.807826"], ["updated_at", "2019-05-31 18:06:00.807826"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (1.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "free"], ["created_at", "2019-05-31 18:06:00.816072"], ["updated_at", "2019-05-31 18:06:00.816072"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.3ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "silver"], ["created_at", "2019-05-31 18:06:00.819492"], ["updated_at", "2019-05-31 18:06:00.819492"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "gold"], ["created_at", "2019-05-31 18:06:00.821234"], ["updated_at", "2019-05-31 18:06:00.821234"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.8ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 16:01:52.314974"], ["updated_at", "2019-05-31 16:01:52.314974"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 16:01:52.318235"], ["updated_at", "2019-05-31 16:01:52.318235"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.7ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 16:01:52.319960"], ["updated_at", "2019-05-31 16:01:52.319960"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 16:01:52.321878"], ["updated_at", "2019-05-31 16:01:52.321878"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 16:01:52.323236"], ["updated_at", "2019-05-31 16:01:52.323236"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-Migrating to ChnageColumnName (20190531160328)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (5.3ms)[0m  [1m[35mALTER TABLE "subscriptions" RENAME COLUMN "type" TO "tier"[0m
-  ↳ db/migrate/20190531160328_chnage_column_name.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531160328"]]
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ bin/rails:9
@@ -200,50 +407,455 @@ Migrating to ChnageColumnName (20190531160328)
   ↳ bin/rails:9
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 16:05:14.140238"], ["updated_at", "2019-05-31 16:05:14.140238"]]
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 18:06:08.096785"], ["updated_at", "2019-05-31 18:06:08.096785"]]
   ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 16:05:14.142195"], ["updated_at", "2019-05-31 16:05:14.142195"]]
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 18:06:08.099589"], ["updated_at", "2019-05-31 18:06:08.099589"]]
   ↳ db/seeds.rb:8
   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 16:05:14.143373"], ["updated_at", "2019-05-31 16:05:14.143373"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 16:05:14.144663"], ["updated_at", "2019-05-31 16:05:14.144663"]]
-  ↳ db/seeds.rb:8
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:8
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:8
-  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 16:05:14.146031"], ["updated_at", "2019-05-31 16:05:14.146031"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 18:06:08.101178"], ["updated_at", "2019-05-31 18:06:08.101178"]]
   ↳ db/seeds.rb:8
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:55
-  [1m[36mSubscription Create (0.8ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "free"], ["created_at", "2019-05-31 16:05:14.153589"], ["updated_at", "2019-05-31 16:05:14.153589"]]
-  ↳ db/seeds.rb:55
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 18:06:08.102521"], ["updated_at", "2019-05-31 18:06:08.102521"]]
+  ↳ db/seeds.rb:8
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:55
+  ↳ db/seeds.rb:8
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:55
-  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "silver"], ["created_at", "2019-05-31 16:05:14.155641"], ["updated_at", "2019-05-31 16:05:14.155641"]]
-  ↳ db/seeds.rb:55
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:55
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 18:06:08.103857"], ["updated_at", "2019-05-31 18:06:08.103857"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ db/seeds.rb:55
-  [1m[36mSubscription Create (0.1ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "gold"], ["created_at", "2019-05-31 16:05:14.156849"], ["updated_at", "2019-05-31 16:05:14.156849"]]
-  ↳ db/seeds.rb:55
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.4ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "free"], ["created_at", "2019-05-31 18:06:08.111495"], ["updated_at", "2019-05-31 18:06:08.111495"]]
+  ↳ db/seeds.rb:61
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ db/seeds.rb:55
-  [1m[36mSubscription Load (0.7ms)[0m  [1m[34mSELECT "subscriptions".* FROM "subscriptions"[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "silver"], ["created_at", "2019-05-31 18:06:08.113279"], ["updated_at", "2019-05-31 18:06:08.113279"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "gold"], ["created_at", "2019-05-31 18:06:08.114904"], ["updated_at", "2019-05-31 18:06:08.114904"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (139.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (194.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (453.2ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (405.8ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190531175222)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175222_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175222"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubscriptions (20190531175258)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" bigserial primary key, "type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175258_create_subscriptions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175258"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMovies (20190531175327)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "title" character varying, "year" integer, "genre" character varying, "director" character varying, "plot" character varying, "image" character varying, "duration" integer, "reference" character varying, "subscriptions" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190531175327_create_movies.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175327"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to SetAssociation (20190531175420)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "movies" ADD "subscription_id" integer[0m
+  ↳ db/migrate/20190531175420_set_association.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_movies_on_subscription_id" ON "movies"  ("subscription_id")[0m
+  ↳ db/migrate/20190531175420_set_association.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175420"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to FixColumn (20190531175627)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "subscriptions" RENAME COLUMN "type" TO "tier"[0m
+  ↳ db/migrate/20190531175627_fix_column.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175627"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to UserMovie (20190531175844)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531175844"]]
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-31 18:06:32.509910"], ["updated_at", "2019-05-31 18:06:32.509910"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.8ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 18:06:37.325767"], ["updated_at", "2019-05-31 18:06:37.325767"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 18:06:37.328634"], ["updated_at", "2019-05-31 18:06:37.328634"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 18:06:37.330699"], ["updated_at", "2019-05-31 18:06:37.330699"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 18:06:37.333438"], ["updated_at", "2019-05-31 18:06:37.333438"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 18:06:37.335237"], ["updated_at", "2019-05-31 18:06:37.335237"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.5ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "free"], ["created_at", "2019-05-31 18:06:37.343311"], ["updated_at", "2019-05-31 18:06:37.343311"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "silver"], ["created_at", "2019-05-31 18:06:37.345323"], ["updated_at", "2019-05-31 18:06:37.345323"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "gold"], ["created_at", "2019-05-31 18:06:37.346943"], ["updated_at", "2019-05-31 18:06:37.346943"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 18:08:06.144162"], ["updated_at", "2019-05-31 18:08:06.144162"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 18:08:06.146473"], ["updated_at", "2019-05-31 18:08:06.146473"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 18:08:06.148065"], ["updated_at", "2019-05-31 18:08:06.148065"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 18:08:06.149585"], ["updated_at", "2019-05-31 18:08:06.149585"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at", "subscription_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 18:08:06.151005"], ["updated_at", "2019-05-31 18:08:06.151005"], ["subscription_id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.3ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "free"], ["created_at", "2019-05-31 18:08:06.158461"], ["updated_at", "2019-05-31 18:08:06.158461"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.1ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "silver"], ["created_at", "2019-05-31 18:08:06.160107"], ["updated_at", "2019-05-31 18:08:06.160107"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "gold"], ["created_at", "2019-05-31 18:08:06.161492"], ["updated_at", "2019-05-31 18:08:06.161492"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (175.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (195.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "netflux_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (507.9ms)[0m  [1m[35mCREATE DATABASE "netflux_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (375.7ms)[0m  [1m[35mCREATE DATABASE "netflux_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (2.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "movies" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "title" character varying, "year" integer, "genre" character varying, "director" character varying, "plot" character varying, "image" character varying, "duration" integer, "reference" character varying, "subscriptions" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "subscription_id" integer)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_movies_on_subscription_id" ON "movies"  ("subscription_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "subscriptions" CASCADE[0m
+  ↳ db/schema.rb:34
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" bigserial primary key, "tier" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190531175844)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190531175222),
+(20190531175258),
+(20190531175420),
+(20190531175627),
+(20190531175327);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-31 18:08:58.827901"], ["updated_at", "2019-05-31 18:08:58.827901"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "movies" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "title" character varying, "year" integer, "genre" character varying, "director" character varying, "plot" character varying, "image" character varying, "duration" integer, "reference" character varying, "subscriptions" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "subscription_id" integer)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_movies_on_subscription_id" ON "movies"  ("subscription_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "subscriptions" CASCADE[0m
+  ↳ db/schema.rb:34
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" bigserial primary key, "tier" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190531175844)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190531175222),
+(20190531175258),
+(20190531175420),
+(20190531175627),
+(20190531175327);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-31 18:08:58.878902"], ["updated_at", "2019-05-31 18:08:58.878902"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (1.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-05-31 18:08:58.881319"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.7ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at", "subscription_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Girls Trip"], ["year", 2017], ["genre", "Comedy"], ["director", "Malcolm D. Lee"], ["plot", "When four lifelong friends travel to New Orleans for the annual Essence Festival, sisterhoods are rekindled, wild sides are rediscovered, and there's enough dancing, drinking, brawling, and romancing to make the Big Easy blush."], ["image", "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_SX300.jpg"], ["duration", 140], ["created_at", "2019-05-31 18:08:58.918949"], ["updated_at", "2019-05-31 18:08:58.918949"], ["subscription_id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at", "subscription_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Fellowship of the Ring"], ["year", 2001], ["genre", "Adventure"], ["director", "Peter Jackson"], ["plot", "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."], ["image", "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"], ["duration", 180], ["created_at", "2019-05-31 18:08:58.921319"], ["updated_at", "2019-05-31 18:08:58.921319"], ["subscription_id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at", "subscription_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Matrix"], ["year", 1999], ["genre", "Action"], ["director", "Lana Wachowski"], ["plot", "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."], ["image", "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"], ["duration", 240], ["created_at", "2019-05-31 18:08:58.922923"], ["updated_at", "2019-05-31 18:08:58.922923"], ["subscription_id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at", "subscription_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Man of Steel"], ["year", 2013], ["genre", "Action"], ["director", "Zack Snyder"], ["plot", "Clark Kent is an alien who as a child was evacuated from his dying world and came to Earth, living as a normal human. But when survivors of his alien home invade Earth, he must reveal himself to the world."], ["image", "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"], ["duration", 250], ["created_at", "2019-05-31 18:08:58.924518"], ["updated_at", "2019-05-31 18:08:58.924518"], ["subscription_id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "genre", "director", "plot", "image", "duration", "created_at", "updated_at", "subscription_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Call Me By Your Name"], ["year", 2017], ["genre", "Drama"], ["director", "Luca Guadagnino"], ["plot", "In 1980s Italy, a romance blossoms between a seventeen year-old student and the older man hired as his father's research assistant."], ["image", "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_SX300.jpg"], ["duration", 280], ["created_at", "2019-05-31 18:08:58.926151"], ["updated_at", "2019-05-31 18:08:58.926151"], ["subscription_id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.7ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "free"], ["created_at", "2019-05-31 18:08:58.942739"], ["updated_at", "2019-05-31 18:08:58.942739"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "silver"], ["created_at", "2019-05-31 18:08:58.945113"], ["updated_at", "2019-05-31 18:08:58.945113"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mSubscription Create (0.2ms)[0m  [1m[32mINSERT INTO "subscriptions" ("tier", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["tier", "gold"], ["created_at", "2019-05-31 18:08:58.946617"], ["updated_at", "2019-05-31 18:08:58.946617"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveColumn (20190531180951)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[35mALTER TABLE "movies" DROP COLUMN "subscriptions"[0m
+  ↳ db/migrate/20190531180951_remove_column.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "movies" DROP COLUMN "reference"[0m
+  ↳ db/migrate/20190531180951_remove_column.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190531180951"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1926339662768776080)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
