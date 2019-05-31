@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import './styles/App.scss';
+import Subscription from './components/Subscriptions/Subscriptions'
 
 function App() {
   return (
     <div className="App">
-    <h1> netflux. </h1>
+    <div className="title"> NETFLUX </div>
+    <Subscription/>
     </div>
   );
 }

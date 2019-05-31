@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
+
+@import 'Subscription';
+
+body{
+    background: #363bb1;
+    font-family: 'Ramabhadra', sans-serif;
+}
+.title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 4em;
+    color: #ff5c20;
+    padding-right: 10%;
+}
